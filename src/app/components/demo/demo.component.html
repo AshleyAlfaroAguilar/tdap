@@ -1,0 +1,59 @@
+<!-- <app-product></app-product> -->
+
+<!-- <h1>hola mundo</h1>
+<h2>Este es el curso de: Todos deberiamos aprender a programar</h2>
+<h1>1+2</h1>
+{{1+3}} -->
+
+{{title}}
+<br>
+<br>
+<input type="text" [(ngModel)]="title">
+
+<div>
+  <p *ngIf="title === 'ashley'">Nombre a mostrar: ashley</p>
+</div>
+
+<div>
+  <p *ngIf="title === 'ana'">Nombre a mostrar: ana</p>
+</div>
+
+<div>
+  <p *ngIf="title === 'rodrigo'">Nombre a mostrar: rodrigo</p>
+</div>
+
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'ashley'">Nombre a mostrar: ashley ngSwtich</p>
+  <p *ngSwitchCase="'ana'">Nombre a mostrar: ana ngSwtich</p>
+  <p *ngSwitchCase="'rodrigo'">Nombre a mostrar: rodrigo ngSwtich</p>
+  <p *ngSwitchDefault>No hay coincidencias</p>
+</div>
+
+<button (click)="agregarElemento()">Agregar elemento</button>
+
+<ul>
+  <li *ngIf="items.length === 0">La lista esta vacia</li>
+  <li *ngFor="let lastname of items; index as i">
+    {{lastname}} {{i}}
+    <button (click)="eliminarElemento(i)">Eliminar</button>
+  </li>
+</ul>
+
+<!-- <div class="product-grid">
+  <app-product *ngFor="let product of products" (productClicked)="clickProduct($event)" [product]="product"></app-product>
+</div> -->
+
+<!-- <div *ngFor="let product of products">
+  {{product.title}}
+  <img [src]="product.image" alt="">
+  {{product.price}}
+  {{product.description}}
+</div> -->
+
+<!-- {{items [0]}}
+{{items [1]}}
+{{items [2]}}
+{{items [3]}}
+{{items [4]}} -->
+
+

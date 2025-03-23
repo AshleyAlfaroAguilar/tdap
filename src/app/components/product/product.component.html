@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{product.title | uppercase}}</mat-card-title>
+        <mat-card-subtitle>{{product.price | currency }}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="crop-image">
+        <img [src]="product.image">
+    </div>
+    <mat-card-content>
+        {{product.description}} 
+    </mat-card-content>
+    <mat-card-actions align="start">
+        <button (click)="addCart()" mat-raised-button>Agregar al carrito</button>
+    </mat-card-actions>
+</mat-card>
+
+
+
+<!-- <h1 appHighlight></h1>
+<div> 
+    <img  alt="">
+</div>
+
+<strong></strong>
+<p></p>
+{{date | date:'short'}}
+
+
+<br>
+<br> -->

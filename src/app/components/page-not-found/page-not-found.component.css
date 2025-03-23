@@ -1,0 +1,10 @@
+div {
+    font-size: 40px;
+    margin-top: 19%;
+    margin-left: 10%;
+}
+
+div > a {
+    text-decoration: none;
+    margin-left: 35%;
+}

@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* body { 
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+ } */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px 20px;
+}
+
+.container{
+    max-width: 1110px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 25px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
